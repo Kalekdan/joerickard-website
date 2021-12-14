@@ -4,8 +4,21 @@
     box-sizing: border-box;
 }
 
+:root{
+  --primary-color1: #112D4E;
+  --primary-color2: #BF6330;
+  --primary-color3: #E3A924;
+  --accent-color1: #DED8B6;
+  --accent-color2: #86C1A5;
+  --accent-color3: #625185;
+  --white:#ffffff;
+  --black:#000000;
+  --alpha-fade: rgba(0, 0, 0, 0.3);
+}
+
 .logoText{
     font-family: 'Raleway', sans-serif;
+    color: var(--accent-color1);
 }
 
 body {
@@ -15,7 +28,7 @@ body {
 
 /* Style the header */
 .header {
-  background-color: #850000;
+  background-color: var(--primary-color1);
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -49,7 +62,7 @@ body {
 
 /* Style the footer */
 .footer {
-  background-color: #2be634;
+  background-color: var(--primary-color2);
   padding: 10px;
   text-align: center;
 }
@@ -65,7 +78,7 @@ body {
 .nav {
   height: 50px;
   width: 100%;
-  background-color: #4d4d4d;
+  background-color: var(--primary-color1);
   position: relative;
 }
 
@@ -76,7 +89,7 @@ body {
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: var(--accent-color1);
   padding: 10px 10px 10px 10px;
 }
 
@@ -95,11 +108,11 @@ body {
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  color: #efefef;
+  color: var(--accent-color1);
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--alpha-fade);
 }
 
 .nav > #nav-check {
@@ -120,19 +133,19 @@ body {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:var(--alpha-fade);
   }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid var(--white);
   }
   .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: var(--primary-color2);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
