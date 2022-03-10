@@ -30,6 +30,14 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.large_content > p {
+  font-size: 20px;
+}
+
+.large_content > h3 {
+  font-size: 25px;
+}
+
 /* Style the header */
 .header {
   background-color: var(--primary-color1);
